@@ -41,6 +41,6 @@ To update, edit the list of dictionaries — each entry has:
 
 ## For slides (Google Slides / PowerPoint)
 
-Option A — Live embed: Insert → Iframe/embed with your Streamlit public URL
-Option B — Screenshots: Run locally, filter to the pathway/region you want, screenshot
-Option C — Screen record a walkthrough for a video slide
+Live embed: Insert → Iframe/embed with your Streamlit public URL
+Screenshots: Run locally, filter to the pathway/region you want, screenshot
+Screen record a walkthrough for a video slide
