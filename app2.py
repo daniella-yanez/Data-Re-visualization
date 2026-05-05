@@ -566,7 +566,7 @@ fig_pw = px.bar(
 fig_pw = plotly_defaults(fig_pw)
 fig_pw.update_layout(
     height=500,
-    title=dict(text="Top 25 Primary Pathways (weighted by migrant volume)", font=dict(size=13, color=MUTED)),
+    title=dict(text="Top 25 Primary Pathways (weighted by migrant volume)\n", font=dict(size=13, color=MUTED)),
     showlegend=True,
     legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="left", x=0, bgcolor="rgba(0,0,0,0)"),
 )
