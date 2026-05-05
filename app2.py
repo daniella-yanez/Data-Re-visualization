@@ -219,6 +219,16 @@ def load_data():
         "US_context":                    "us_context",
     })
 
+    # Guarantee us_context exists — handle any capitalisation variant or missing column
+    if "us_context" not in df.columns:
+        # Try case-insensitive match against remaining columns
+        col_map = {c.lower(): c for c in df.columns}
+        candidate = col_map.get("us_context") or col_map.get("us context")
+        if candidate:
+            df = df.rename(columns={candidate: "us_context"})
+        else:
+            df["us_context"] = "N/A"
+
     US_POP = 335_000_000  # 2024 estimate
 
     # Derived metrics
